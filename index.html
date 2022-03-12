@@ -14,8 +14,10 @@ justify-content: center;
 }
 
 /* The width makes image not to go outside of the container, and the height preserves the ratio.*/
-#image {
-max-width: 100%:
+img  {
+display: block;
+margin: auto;
+max-width: 100%;
 height: auto;
 }
 
@@ -43,12 +45,12 @@ background-color: black;
 <main>
 Here comes my content.
 <figure id="img-div">
+<img id="image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="This is a relaxing cat.">
 <figcaption id="img-caption">
 This should be an image of a relaxing cat.
 </figcaption>
-<img id="image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="This is a relaxing cat.">
 </figure>
-<p>Hello, and welcome to my first FreeCodeCamp project. This should demonstrate my grasp of the learned concepts. I hope I finish it successfully. You can <a href="https://www.math.bas.bg/vt/" target="_blank">read more about it here</a>.</p>
+<p id="tribute-info">Hello, and welcome to my first FreeCodeCamp project. This should demonstrate my grasp of the learned concepts. I hope I finish it successfully. You can <a id="tribute-link" href="https://www.math.bas.bg/vt/" target="_blank">read more about it here</a>.</p>
 <p>And here you can see my <a href="/fcc/p2.html">second project.</a></p>
 </main>
 <footer>
